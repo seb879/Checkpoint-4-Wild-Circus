@@ -2,6 +2,7 @@
   text-align: center;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 .description {
   width: 90%;
   height: 20vh;
@@ -15,4 +16,10 @@
   padding-bottom: 2%;
   border: solid 1px black;
 >>>>>>> store
+=======
+.footer{
+  width: 90%;
+  margin-left: 5%;
+  border: solid 1px black ;
+>>>>>>> footer
 }
