@@ -1,9 +1,18 @@
 .App {
   text-align: center;
 }
+<<<<<<< HEAD
 .description {
   width: 90%;
   height: 20vh;
   margin-left: 5%;
   border: 1px solid black;
+=======
+.store{
+  width: 45%;
+  margin-left: 5%;
+  padding-top: 1%;
+  padding-bottom: 2%;
+  border: solid 1px black;
+>>>>>>> store
 }
