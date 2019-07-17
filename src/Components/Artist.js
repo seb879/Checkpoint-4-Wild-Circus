@@ -1,21 +1,23 @@
 import React from 'react';
 import wilders from './wilder'
-import { Container, Row, Col } from 'reactstrap';
 
 
 const Artist = () => (
-    <Container>
-        <Row>
-        <h1>Artist</h1>
-        </Row>
-        <Row>
+    <div id="Artist" className="artist">
+        <h1>Artists</h1>
+        <div className="container">
         {wilders.map(wilder => (<div>
-            <Col lg="4" xs="12"><img src={wilder.profilePic} alt={wilder.firstName} style={{width: "100px", height: "100px"}} /></Col>
-            <Col lg="4" xs="12"><p>{wilder.firstName}</p></Col>
-            <Col lg="4" xs="12"><p>{wilder.description}</p></Col>
+            <div className="row" >
+                <div className="col-xs-12 col-lg-2"><img className="picture" src={wilder.profilePic} alt={wilder.firstName} style={{width: "100px", height: "100px"}} /></div>
+                <div className=" description-artist col-xs-12 offset-lg-2 col-lg-8">
+                    <h2>{wilder.firstName}</h2>
+                    <p>{wilder.description}</p>
+                </div>
+            </div>
         </div>))}
-        </Row>
-    </Container>
+        </div>
+        
+    </div>
 );
 
 export default Artist;
